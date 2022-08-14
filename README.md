@@ -1,2 +1,7 @@
-# rust-algorithms
-Algorithms and data structures implemented in Rust
+# Rust Algorithms
+Algorithms and data structures implemented in Rust.
+
+## Sorting
+- [Bubble Sort](./src/algorithms/sorting/bubble_sort.rs)
+- [Selection Sort](./src/algorithms/sorting/selection_sort.rs)
+- [Counting Sort](./src/algorithms/sorting/counting_sort.rs)
