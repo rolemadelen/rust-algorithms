@@ -2,7 +2,7 @@
 
 - [ ] Implement a vector (mutable array with automatic resizing):
     - [x] size() - number of items
-    - [ ] New raw data array with allocated memory (default = 16, or power of 2 - 16, 32, 64, ...)
+    - [x] New raw data array with allocated memory (default = 16, or power of 2 - 16, 32, 64, ...)
     - [x] capacity() - number of items it can hold
     - [x] is_empty()
     - [x] at(index) - returns item at given index, blows up if index out of bounds
@@ -14,7 +14,7 @@
     - [x] remove(item) - looks for value and removes index holding it (even if in multiple places)
     - [x] find(item) - looks for value and returns first index with that value, -1 if not found
     - [ ] resize(new_capacity) // private function
-        - [ ] when you reach capacity, resize to double the size
+        - [] when you reach capacity, resize to double the size
         - [ ] when popping an item, if size is 1/4 of capacity, resize to half
 
 ## Time complexity
