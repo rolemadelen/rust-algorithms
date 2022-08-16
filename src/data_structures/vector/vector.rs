@@ -30,8 +30,6 @@ impl Vector {
 		if self.size == self.capacity {
 			println!("vector is full.");
 			return;
-			// println!("vector is full. Resizing the capacity {} => {}", self.capacity, self.capacity * 2);
-			// self.resize(self.capacity * 2);
 		}
 
 		self.arr[self.size as usize] = item;
@@ -43,10 +41,6 @@ impl Vector {
 			println!("vector is empty.");
 			return -1; 
 		}
-		// if (self.size)*4 == self.capacity {
-		// 	println!("Here: {}, {}", self.size, self.capacity);
-		// 	self.resize(self.capacity / 2);
-		// }
 
 		self.size -= 1;
 		self.arr[self.size as usize]

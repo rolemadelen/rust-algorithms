@@ -7,4 +7,4 @@ Algorithms and data structures implemented in Rust.
 - [Counting Sort](./src/algorithms/sorting/counting_sort.rs)
 
 ## Data Structures
-- [Vector w/ fixed sized array](./src/data_structures/vector/vector.rs)
+- [Vector w/ fixed sized array](./src/data_structures/vector/)
