@@ -1,21 +1,21 @@
 # Vector
 
 - [ ] Implement a vector (mutable array with automatic resizing):
-    - [x] size() - number of items
     - [x] New raw data array with allocated memory (default = 16, or power of 2 - 16, 32, 64, ...)
-    - [x] capacity() - number of items it can hold
-    - [x] is_empty()
-    - [x] at(index) - returns item at given index, blows up if index out of bounds
-    - [x] push(item)
-    - [x] insert(index, item) - inserts item at index, shifts that index's value and trailing elements to the right
-    - [x] prepend(item) - inserts item at index 0
-    - [x] pop() - remove from end, return value<
-    - [x] delete(index) - delete item at index, shifting all trailing elements left
-    - [x] remove(item) - looks for value and removes index holding it (even if in multiple places)
-    - [x] find(item) - looks for value and returns first index with that value, -1 if not found
+    - [x] size() - return number of items in a vector.
+    - [x] capacity() - return number of items it can hold.
+    - [x] is_empty() - returns true if empty, else false.
+    - [x] at(index) - returns item at given index; blows up if index-out-of-bound occurs.
+    - [x] push(item) - inserts item at the end of the vector.
+    - [x] insert(index, item) - inserts item at index; shifts that index's value and trailing elements to the right.
+    - [x] prepend(item) - inserts item at index 0.
+    - [x] pop() - remove and return the last item in the vector.
+    - [x] delete(index) - removes item at index and shift all trailing elements to the left.
+    - [x] remove(item) - looks for the item and removes index holding it (even if in multiple places).
+    - [x] find(item) - looks for the item and returns first index with that value, -1 if not found.
     - [ ] resize(new_capacity) // private function
-        - [ ] when you reach capacity, resize to double the size
-        - [ ] when popping an item, if size is 1/4 of capacity, resize to half
+        - [ ] when you reach the capacity, double the container size.
+        - [ ] when current size becomes 1/4th of the capacity, halve the container size.
 
 ## Time complexity
 - O(1) to add/remove at end (amortized for allocations for more space), index, or update

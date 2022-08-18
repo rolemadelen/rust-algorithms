@@ -19,25 +19,16 @@ fn bubble_sort<T: Ord>(arr: &mut [T]) {
 }
 
 fn main() {
-	let mut vec1 = vec![4, 5, 3, 2, 1];
-	let mut vec2 = vec![1, 2, 3, 4, 5];
-	let mut vec3 = vec![5, 4, 3, 2, 1];
+	let mut vec1 = vec![45, 23, -13, 93, 84, -173, 10, 17, 711];
+	let mut vec2 = vec!["hello", "C++", "Spoon", "Way", "Duck", "Ginger Ale"];
 
+	println!("Sort numbers in ascending order.");
+	println!("Before: {:?}", vec1);
 	bubble_sort(&mut vec1);
-	for i in 0..vec1.len() {
-		print!("{} ", vec1[i]);
-	}
-	println!();
+	println!("After: {:?}\n", vec1);
 
+	println!("Sort strings alphabetically.");
+	println!("Before: {:?}", vec2);
 	bubble_sort(&mut vec2);
-	for i in 0..vec2.len() {
-		print!("{} ", vec2[i]);
-	}
-	println!();
-
-	bubble_sort(&mut vec3);
-	for i in 0..vec3.len() {
-		print!("{} ", vec3[i]);
-	}
-	println!();
+	println!("After: {:?}", vec2);
 }

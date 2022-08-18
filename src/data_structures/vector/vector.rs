@@ -150,4 +150,8 @@ fn main() {
 	println!("pop {}", vec.pop());
 	
 	vec.print();
+
+	println!("{}", vec.size());
+	println!("{}", vec.capacity());
+	// println!("{}", vec.is_empty());
 }
